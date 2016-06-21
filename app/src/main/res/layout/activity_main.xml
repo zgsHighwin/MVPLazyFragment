@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    >
+
+
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"></FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+
+    <RadioGroup
+        android:id="@+id/radiogroup"
+        android:padding="5dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/radiobtn_main"
+            android:textColor="#000"
+            android:drawableTop="@mipmap/b"
+            android:gravity="center_horizontal|center_vertical"
+            android:button="@null"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="主页" />
+
+        <RadioButton
+            android:id="@+id/radiobtn_detail"
+            android:textColor="#000"
+            android:gravity="center_horizontal|center_vertical"
+            android:drawableTop="@mipmap/b"
+            android:button="@null"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="详情" />
+
+        <RadioButton
+            android:id="@+id/radiobtn_set"
+            android:textColor="#000"
+            android:drawableTop="@mipmap/c"
+            android:button="@null"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="设置" />
+    </RadioGroup>
+</LinearLayout>
